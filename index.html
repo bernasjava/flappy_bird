@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Flappy bird</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+            html, body {
+                margin: 0;
+                padding: 0;
+                background-color: lightblue;
+            }
+
+            canvas {
+                margin: 0;
+                padding: 0;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            .points-printer {
+                position: absolute;
+                left: 50%;
+                right: 50%;
+            }
+
+            .points-printer h1 {
+                color: white;
+                font-size: 52px;
+                font-family: 'Bebas Neue', cursive;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="hidden">
+            <img id="bird" src="images/bird.png">
+            <img id="background" src="images/background.png">
+            <img id="top-pipe" src="images/top-pipe.png">
+            <img id="down-pipe" src="images/down-pipe.png">
+        </div>
+        <div class="points-printer">
+            <h1 id="points">0</h1>
+        </div>
+        <canvas></canvas>
+        <script src="scripts/bird.js"></script>
+        <script src="scripts/pipe.js"></script>
+        <script src="scripts/game.js"></script>
+    </body>
+</html>
